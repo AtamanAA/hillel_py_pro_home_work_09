@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verification</title>
+</head>
+<body>
+    <h1>Please input your code</h1>
+    <form action="{% url 'check_code' phone %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><input type="submit" value="Send Code"></p>
+    </form>
+
+</body>
+</html>

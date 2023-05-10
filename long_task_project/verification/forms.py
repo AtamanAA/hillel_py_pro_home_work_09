@@ -17,3 +17,7 @@ class PhoneForm(forms.Form):
         return phonenumbers.format_number(
             phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL
         )
+
+
+class CodeForm(forms.Form):
+    code = forms.CharField(max_length=6, initial="XXXXXX")
