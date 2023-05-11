@@ -5,6 +5,15 @@
     <title>Verification</title>
 </head>
 <body>
+
+    <div>
+        {% if messages %}
+            {% for message in messages %}
+                {{message}}
+            {% endfor %}
+        {% endif %}
+    </div>
+
     <h1>Please input your code</h1>
     <form action="{% url 'check_code' phone %}" method="post">
         {% csrf_token %}
