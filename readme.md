@@ -4,10 +4,11 @@ Long-running tasks з Celery
 
 ## Розгортаня проекту
 
-1. Ініціалізувати GIT та склонувати проект
+1. Ініціалізувати GIT, склонувати репозиторій та перейти до деректорії локального репозиторію
     ```bash
     git init
     git clone https://github.com/AtamanAA/hillel_py_pro_home_work_09
+    cd hillel_py_pro_home_work_09
     ```
 2. Встановити venv та активувати його
     ```bash
