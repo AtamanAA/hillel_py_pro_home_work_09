@@ -2,7 +2,7 @@
 
 Long-running tasks з Celery
 
-## Розгортаня проекту
+## Розгортаня проекту (команди для Windows)
 
 1. Ініціалізувати GIT, склонувати репозиторій та перейти до деректорії локального репозиторію
     ```bash
@@ -23,12 +23,12 @@ Long-running tasks з Celery
     ```bash
     cd long_task_project    
     ```
-5. Створити файл .env у головній деректорії проекту (поряд з файлом manage.py) і додати до нього свій секретний токен для Twilio:
+5. Створити файл "**.env**" у головній деректорії проекту (поряд з файлом manage.py) і додати до нього запис зі своїм секретним токеном для Twilio як в прикладі нижче:
       
     ```
-   TWILIO_AUTH_TOKEN={{ your token }}   
+   TWILIO_AUTH_TOKEN = "adcd43qwerty....."   
     ```
-6. Для запуску процессу [RabbitMQ](https://www.rabbitmq.com) у окремому терміналі виконати команду (переконатися що [Docker Desktop](https://www.docker.com/products/docker-desktop/) запущений )
+6. Для запуску процессу [RabbitMQ](https://www.rabbitmq.com) в окремому терміналі виконати команду (переконатися що [Docker Desktop](https://www.docker.com/products/docker-desktop/) запущений )
     ```bash
     docker run -d -p 5672:5672 rabbitmq    
     ```
